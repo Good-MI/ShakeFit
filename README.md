@@ -6,43 +6,43 @@ ShakeFit adalah aplikasi pelacak kebugaran dan latihan beban tubuh (*bodyweight 
 
 ## 1. Fitur-Fitur Aplikasi
 
-* **Pelacak Repetisi Squat Otomatis**: Menghitung repetisi jongkok secara akurat dengan ponsel diletakkan di saku celana depan menggunakan kombinasi sudut kemiringan paha (*tilt angle*) dan akselerasi vertikal.
-* **Pelacak Repetisi Push-up Otomatis**: Menghitung repetisi *push-up* saat ponsel diletakkan di lantai tepat di bawah dada dengan memanfaatkan sensor kedekatan (*proximity*).
-* **Pelacak Lari (Outdoor & Treadmill)**:
-  * **Outdoor**: Pelacakan jarak, rute, kecepatan (*pace* menit/km), dan *split* per kilometer menggunakan GPS dengan filter akurasi tinggi.
-  * **Treadmill (Indoor)**: Pelacakan langkah berbasis *step detector* akselerometer dengan faktor kalibrasi panjang langkah personal.
-  * **Layanan Latar Belakang (*Foreground Service*)**: Pelacakan lari tetap aktif saat layar mati atau aplikasi diminimalkan.
-* **Target Latihan Harian (Goals)**: Pembuatan, pembaruan, dan pemantauan target harian untuk Squat, Push-up, dan Lari dengan visualisasi progres interaktif.
-* **Riwayat Latihan Komprehensif (History)**: Pencatatan detail setiap sesi latihan (waktu, durasi, repetisi/jarak, estimasi kalori, ritme tempo, serta catatan pribadi) yang dapat difilter per jenis latihan.
-* **Statistik & Gamifikasi (Stats & Badges)**:
-  * Ringkasan total latihan, rekor pribadi (*personal records*), dan grafik tren aktivitas 7 hari terakhir berbasis Canvas kustom.
-  * Perhitungan *streak* latihan harian dan galeri lencana penghargaan (*badges*).
-* **Umpan Balik Multi-Sensoris**: Panduan suara hitungan/milestone (*Text-To-Speech*), *beep sound*, serta getaran (*haptic feedback*) saat repetisi terhitung dan target tercapai.
-* **Profil Pengguna & Notifikasi Ulang Tahun**: Personalisasi data fisik (berat dan tinggi badan) untuk perhitungan kalori akurat, serta pengingat ulang tahun otomatis berbasis *WorkManager*.
-* **Alat Diagnostik Sensor (Sensor Debug)**: Layar pemantau nilai mentah sensor secara *real-time* untuk mempermudah pengujian hardware ponsel.
+- **Pelacak Repetisi Squat Otomatis**: Menghitung repetisi jongkok secara akurat dengan ponsel diletakkan di saku celana depan menggunakan kombinasi sudut kemiringan paha (*tilt angle*) dan akselerasi vertikal.
+- **Pelacak Repetisi Push-up Otomatis**: Menghitung repetisi *push-up* saat ponsel diletakkan di lantai tepat di bawah dada dengan memanfaatkan sensor kedekatan (*proximity*).
+- **Pelacak Lari (Outdoor & Treadmill)**:
+  - **Outdoor**: Pelacakan jarak, rute, kecepatan (*pace* menit/km), dan *split* per kilometer menggunakan GPS dengan filter akurasi tinggi.
+  - **Treadmill (Indoor)**: Pelacakan langkah berbasis *step detector* akselerometer dengan faktor kalibrasi panjang langkah personal.
+  - **Layanan Latar Belakang (*Foreground Service*)**: Pelacakan lari tetap aktif saat layar mati atau aplikasi diminimalkan.
+- **Target Latihan Harian (Goals)**: Pembuatan, pembaruan, dan pemantauan target harian untuk Squat, Push-up, dan Lari dengan visualisasi progres interaktif.
+- **Riwayat Latihan Komprehensif (History)**: Pencatatan detail setiap sesi latihan (waktu, durasi, repetisi/jarak, estimasi kalori, ritme tempo, serta catatan pribadi) yang dapat difilter per jenis latihan.
+- **Statistik & Gamifikasi (Stats & Badges)**:
+  - Ringkasan total latihan, rekor pribadi (*personal records*), dan grafik tren aktivitas 7 hari terakhir berbasis Canvas kustom.
+  - Perhitungan *streak* latihan harian dan galeri lencana penghargaan (*badges*).
+- **Umpan Balik Multi-Sensoris**: Panduan suara hitungan/milestone (*Text-To-Speech*), *beep sound*, serta getaran (*haptic feedback*) saat repetisi terhitung dan target tercapai.
+- **Profil Pengguna & Notifikasi Ulang Tahun**: Personalisasi data fisik (berat dan tinggi badan) untuk perhitungan kalori akurat, serta pengingat ulang tahun otomatis berbasis *WorkManager*.
+- **Alat Diagnostik Sensor (Sensor Debug)**: Layar pemantau nilai mentah sensor secara *real-time* untuk mempermudah pengujian hardware ponsel.
 
 ---
 
 ## 2. Teknologi dan Arsitektur yang Digunakan
 
-* **Bahasa Pemrograman**: Kotlin 2.2.10 murni
-* **UI Toolkit**: Jetpack Compose dengan Material 3 (berbasis Compose BOM)
-* **Pola Arsitektur**:
-  * **MVI / UDF (Unidirectional Data Flow)**: Pemisahan tegas antara State, Event, dan Side Effects.
-  * **Thin Route & Stateless Screen**: Layar UI sepenuhnya *stateless* dan modular, dihubungkan via *Route Composable* ke ViewModel.
-  * **Single-Activity Architecture**: Navigasi multi-layar dikelola oleh `ShakeFitNavHost` dengan AndroidX Navigation Compose.
-* **Penyimpanan Data (Database)**: SQLite murni menggunakan `SQLiteOpenHelper` bawaan Android tanpa ORM/Room pihak ketiga, menjamin performa cepat dan ukuran aplikasi ringan.
-* **Dependency Injection**: *Manual Dependency Injection* terpusat melalui `AppContainer` di kelas `ShakeFitApplication`.
-* **Asinkron & Reaktivitas**: Kotlin Coroutines (`StateFlow`, `SharedFlow`, `Flow`).
-* **Background Processing**:
-  * Android Foreground Service (`RunningForegroundService`) dengan integrasi *Notification & WakeLock*.
-  * AndroidX WorkManager (`BirthdayNotificationWorker`) untuk tugas terjadwal.
-* **Build System & Konfigurasi SDK**:
-  * Android Gradle Plugin (AGP): `9.3.3`
-  * Gradle: `9.5.0`
-  * Minimum SDK: `26` (Android 8.0 Oreo)
-  * Target & Compile SDK: `37` (Android 15+)
-  * Java Version: OpenJDK 11 / 25 kompatibel
+- **Bahasa Pemrograman**: Kotlin 2.2.10 murni
+- **UI Toolkit**: Jetpack Compose dengan Material 3 (berbasis Compose BOM)
+- **Pola Arsitektur**:
+  - **MVI / UDF (Unidirectional Data Flow)**: Pemisahan tegas antara State, Event, dan Side Effects.
+  - **Thin Route & Stateless Screen**: Layar UI sepenuhnya *stateless* dan modular, dihubungkan via *Route Composable* ke ViewModel.
+  - **Single-Activity Architecture**: Navigasi multi-layar dikelola oleh `ShakeFitNavHost` dengan AndroidX Navigation Compose.
+- **Penyimpanan Data (Database)**: SQLite murni menggunakan `SQLiteOpenHelper` bawaan Android tanpa ORM/Room pihak ketiga, menjamin performa cepat dan ukuran aplikasi ringan.
+- **Dependency Injection**: *Manual Dependency Injection* terpusat melalui `AppContainer` di kelas `ShakeFitApplication`.
+- **Asinkron & Reaktivitas**: Kotlin Coroutines (`StateFlow`, `SharedFlow`, `Flow`).
+- **Background Processing**:
+  - Android Foreground Service (`RunningForegroundService`) dengan integrasi *Notification & WakeLock*.
+  - AndroidX WorkManager (`BirthdayNotificationWorker`) untuk tugas terjadwal.
+- **Build System & Konfigurasi SDK**:
+  - Android Gradle Plugin (AGP): `9.3.3`
+  - Gradle: `9.5.0`
+  - Minimum SDK: `26` (Android 8.0 Oreo)
+  - Target & Compile SDK: `37` (Android 15+)
+  - Java Version: OpenJDK 11 / 25 kompatibel
 
 ---
 
@@ -62,62 +62,14 @@ ShakeFit adalah aplikasi pelacak kebugaran dan latihan beban tubuh (*bodyweight 
 ## 4. Cara Menjalankan Aplikasi
 
 ### Prasyarat:
-* Komputer dengan OS Windows, macOS, atau Linux.
-* **Android Studio Ladybug (2024.2.1)** atau versi yang lebih baru.
-* Android SDK Platform 37 dan JDK 11 atau lebih baru telah terpasang.
-* Perangkat fisik Android dengan OS minimal Android 8.0 (Oreo) yang memiliki fitur Accelerometer (direkomendasikan HP fisik agar sensor gerak dan lokasi dapat diuji langsung).
+- Komputer dengan OS Windows, macOS, atau Linux.
+- **Android Studio Ladybug (2024.2.1)** atau versi yang lebih baru.
+- Android SDK Platform 37 dan JDK 11 atau lebih baru telah terpasang.
+- Perangkat fisik Android dengan OS minimal Android 8.0 (Oreo) yang memiliki fitur Accelerometer (direkomendasikan HP fisik agar sensor gerak dan lokasi dapat diuji langsung).
 
 ### Langkah-Langkah:
 
 1. **Clone Repositori**:
    ```bash
-   git clone https://github.com/Good-MI/ShakeFit.git
+   git clone [https://github.com/Good-MI/ShakeFit.git](https://github.com/Good-MI/ShakeFit.git)
    cd ShakeFit
-   ```
-
-2. **Buka Proyek di Android Studio**:
-   * Jalankan Android Studio.
-   * Pilih menu **File** > **Open...** lalu arahkan ke direktori proyek `ShakeFit`.
-   * Tunggu proses *Gradle Sync* dan pengunduhan dependensi selesai.
-
-3. **Kompilasi & Jalankan Unit Test (Opsional)**:
-   Untuk memverifikasi logika detektor sensor dan kalkulasi:
-   * Melalui terminal:
-     ```bash
-     ./gradlew testDebugUnitTest
-     ```
-     *(Pada Windows: `.\gradlew.bat testDebugUnitTest`)*
-
-4. **Hubungkan Perangkat Fisik**:
-   * Aktifkan **Developer Options** dan **USB Debugging** pada ponsel Android Anda.
-   * Hubungkan ponsel ke komputer menggunakan kabel data USB.
-   * Pastikan nama perangkat Anda terdeteksi pada daftar target perangkat di toolbar Android Studio.
-
-5. **Build dan Jalankan Aplikasi**:
-   * Klik tombol hijau **Run 'app'** (`Shift + F10`) di Android Studio.
-   * Aplikasi akan dikompilasi, dipasang (*installed*), dan langsung terbuka di ponsel fisik Anda.
-   * Berikan izin runtime (Notifikasi dan Lokasi) saat diminta agar seluruh fitur pelacakan berjalan optimal.
-
-   ## 5. Cara Menggunakan Aplikasi
-
-1. **Lengkapi Profil Pengguna**
-   - Buka tab **Profil**, lalu isi Nama Panggilan, Jenis Kelamin, Tinggi Badan, Berat Badan, dan Tanggal Lahir.
-   - Tekan **Simpan Profil** agar perhitungan kalori dan estimasi panjang langkah lebih akurat.
-
-2. **Buat Target Harian (Opsional)**
-   - Buka tab **Target**, lalu tambahkan target harian untuk **Squat**, **Push-up**, atau **Lari**.
-   - Gunakan tombol **Aktif / Nonaktif** pada kartu target jika ingin menjeda target tertentu sementara tanpa menghapusnya. Target yang aktif akan tampil di halaman **Beranda**.
-
-3. **Mulai Latihan**
-   - Buka tab **Beranda**, lalu pilih salah satu menu di bagian **Mulai Latihan**:
-     - **Squat**: Tekan mulai, masukkan ponsel ke dalam **saku celana depan**, lalu lakukan gerakan jongkok dengan tempo normal.
-     - **Push-up**: Letakkan ponsel di lantai **tepat di bawah dada**, tekan mulai, lalu lakukan gerakan push-up hingga dada mendekati layar.
-     - **Lari**: Pilih mode **Outdoor** (aktifkan GPS) atau **Treadmill** (indoor), lalu tekan mulai. Pelacakan tetap berjalan meski layar dimatikan.
-
-4. **Selesaikan dan Simpan Sesi**
-   - Setelah selesai berolahraga, tekan tombol **Selesai (Finish)**.
-   - Tinjau ringkasan latihan (repetisi/jarak, durasi, kalori, dan kualitas gerakan), lalu simpan.
-
-5. **Pantau Riwayat dan Statistik**
-   - Buka tab **Aktivitas** untuk melihat daftar **Riwayat** latihan (bisa difilter berdasarkan jenis olahraga).
-   - Geser ke sub-tab **Statistik** untuk melihat grafik tren 7 hari terakhir, *streak* harian, rekor pribadi, dan lencana (*badges*) yang berhasil dibuka.
