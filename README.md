@@ -97,3 +97,27 @@ ShakeFit adalah aplikasi pelacak kebugaran dan latihan beban tubuh (*bodyweight 
    * Klik tombol hijau **Run 'app'** (`Shift + F10`) di Android Studio.
    * Aplikasi akan dikompilasi, dipasang (*installed*), dan langsung terbuka di ponsel fisik Anda.
    * Berikan izin runtime (Notifikasi dan Lokasi) saat diminta agar seluruh fitur pelacakan berjalan optimal.
+
+   ## 5. Cara Menggunakan Aplikasi
+
+1. **Lengkapi Profil Pengguna**
+   - Buka tab **Profil**, lalu isi Nama Panggilan, Jenis Kelamin, Tinggi Badan, Berat Badan, dan Tanggal Lahir.
+   - Tekan **Simpan Profil** agar perhitungan kalori dan estimasi panjang langkah lebih akurat.
+
+2. **Buat Target Harian (Opsional)**
+   - Buka tab **Target**, lalu tambahkan target harian untuk **Squat**, **Push-up**, atau **Lari**.
+   - Gunakan tombol **Aktif / Nonaktif** pada kartu target jika ingin menjeda target tertentu sementara tanpa menghapusnya. Target yang aktif akan tampil di halaman **Beranda**.
+
+3. **Mulai Latihan**
+   - Buka tab **Beranda**, lalu pilih salah satu menu di bagian **Mulai Latihan**:
+     - **Squat**: Tekan mulai, masukkan ponsel ke dalam **saku celana depan**, lalu lakukan gerakan jongkok dengan tempo normal.
+     - **Push-up**: Letakkan ponsel di lantai **tepat di bawah dada**, tekan mulai, lalu lakukan gerakan push-up hingga dada mendekati layar.
+     - **Lari**: Pilih mode **Outdoor** (aktifkan GPS) atau **Treadmill** (indoor), lalu tekan mulai. Pelacakan tetap berjalan meski layar dimatikan.
+
+4. **Selesaikan dan Simpan Sesi**
+   - Setelah selesai berolahraga, tekan tombol **Selesai (Finish)**.
+   - Tinjau ringkasan latihan (repetisi/jarak, durasi, kalori, dan kualitas gerakan), lalu simpan.
+
+5. **Pantau Riwayat dan Statistik**
+   - Buka tab **Aktivitas** untuk melihat daftar **Riwayat** latihan (bisa difilter berdasarkan jenis olahraga).
+   - Geser ke sub-tab **Statistik** untuk melihat grafik tren 7 hari terakhir, *streak* harian, rekor pribadi, dan lencana (*badges*) yang berhasil dibuka.
