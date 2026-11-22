@@ -107,7 +107,7 @@ Perangkat fisik Android dengan OS minimal Android 8.0 (Oreo) yang memiliki fitur
 **Clone Repositori**:
 ```bash
 
-git clone (https://github.com/Good-MI/ShakeFit.git)
+git clone https://github.com/Good-MI/ShakeFit.git
 
 cd ShakeFit
 
