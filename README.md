@@ -71,7 +71,7 @@ ShakeFit adalah aplikasi pelacak kebugaran dan latihan beban tubuh (*bodyweight 
 
 1. **Clone Repositori**:
    ```bash
-   git clone <URL_REPOSITORY_ANDA>
+   git clone (https://github.com/Good-MI/ShakeFit.git)
    cd ShakeFit
    ```
 
