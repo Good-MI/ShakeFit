@@ -49,7 +49,7 @@ ShakeFit adalah aplikasi olahraga Android yang berjalan 100% offline. Aplikasi i
 
 1. **Download / Clone Proyek**:
    ```bash
-   git clone [https://github.com/Good-MI/ShakeFit.git](https://github.com/Good-MI/ShakeFit.git)
+   git clone https://github.com/Good-MI/ShakeFit.git
    cd ShakeFit
    ```
 2. **Buka di Android Studio**:
