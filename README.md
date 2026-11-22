@@ -78,4 +78,4 @@ ShakeFit adalah aplikasi olahraga Android yang berjalan 100% offline. Aplikasi i
 
 ## 6. Screenshot Tampilan Aplikasi
 
-*(Hapus baris ini, lalu drag & drop gambar screenshot dari HP langsung ke sini saat edit di GitHub)*
+*(https://drive.google.com/drive/folders/1BlrUtMFcx_yWXwonJdNsm2sOeNNiqDzp?usp=sharing)*
