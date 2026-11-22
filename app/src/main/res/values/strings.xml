@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">ShakeFit</string>
+    <string name="greeting_default">Siap bergerak hari ini?</string>
+    <string name="greeting_user">Halo, %1$s!</string>
+    <string name="streak_label">%1$d hari</string>
+    <string name="streak_title">Streak Harian</string>
+    <string name="section_today_goals">Target Hari Ini</string>
+    <string name="section_exercises">Mulai Latihan</string>
+    <string name="empty_goals_title">Belum ada target hari ini</string>
+    <string name="empty_goals_desc">Buat target harianmu di tab Target untuk memantau progres olahraga.</string>
+    <string name="btn_create_goal">Atur Target</string>
+    <string name="btn_try_again">Coba Lagi</string>
+    <string name="sensor_unavailable_title">Sensor Tidak Tersedia</string>
+    <string name="loading_label">Memuat data beranda...</string>
+    <string name="tap_to_start">Ketuk untuk mulai latihan</string>
+    <string name="goal_completed">Tercapai!</string>
+    <string name="btn_debug_sensor">Uji Sensor &amp; GPS (Debug)</string>
+    <string name="squat_desc">Sensor di saku celana depan</string>
+    <string name="pushup_desc">Sensor proximity di bawah dada</string>
+    <string name="running_desc">GPS outdoor &amp; treadmill</string>
+
+    <!-- Sesi Latihan & Posisi HP -->
+    <string name="pos_hint_title">Posisi HP Wajib</string>
+    <string name="pos_hint_expand">Lihat petunjuk</string>
+    <string name="pos_hint_collapse">Sembunyikan</string>
+    <string name="mode_title">Pilih Mode Latihan</string>
+    <string name="mode_free">Bebas</string>
+    <string name="mode_challenge_60s">Tantangan 60 Detik</string>
+    <string name="mode_goal">Target</string>
+    <string name="btn_start_workout">Mulai Latihan</string>
+    <string name="btn_pause">Jeda</string>
+    <string name="btn_resume">Lanjut</string>
+    <string name="btn_finish">Selesai</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="countdown_get_ready">Bersiap...</string>
+    <string name="reps_label">REPETISI</string>
+    <string name="target_reps_format">Target: %1$d reps</string>
+    <string name="target_reached_pill">Target Tercapai!</string>
+    <string name="paused_pill">DIJEDA</string>
+    <string name="metric_duration">Durasi</string>
+    <string name="metric_remaining_time">Sisa Waktu</string>
+    <string name="metric_quality">Kualitas</string>
+    <string name="metric_pace">Pace Rata-rata</string>
+    <string name="metric_distance">Jarak</string>
+    <string name="metric_calories">Kalori</string>
+    <string name="metric_tempo">Tempo Rata-rata</string>
+    <string name="btn_back">Kembali</string>
+
+    <!-- Ringkasan Latihan (SessionSummary) & Gamifikasi -->
+    <string name="workout_finished_title">Latihan Selesai!</string>
+    <string name="workout_finished_subtitle">Kerja bagus, sesi latihanmu telah tersimpan!</string>
+    <string name="new_record_title">REKOR BARU TERCIPTA!</string>
+    <string name="new_record_subtitle">Kamu melampaui pencapaian terbaik sebelumnya!</string>
+    <string name="new_badges_unlocked_title">Lencana Baru Terbuka!</string>
+    <string name="btn_finish_summary">Selesai / Tutup</string>
+
+    <!-- Sesi Lari (RunSessionScreen) & GPS -->
+    <string name="env_title">Pilih Lingkungan Lari</string>
+    <string name="env_outdoor">Outdoor (GPS)</string>
+    <string name="env_treadmill">Treadmill (Sensor)</string>
+    <string name="env_outdoor_desc">Pelacakan jarak &amp; pace memakai GPS ponsel di saku celana atau armband.</string>
+    <string name="env_treadmill_desc">Pelacakan langkah dari sensor accelerometer di saku atau armband tanpa GPS.</string>
+    <string name="btn_start_run">Mulai Lari</string>
+    <string name="bg_tracking_active">Tracking Background Aktif</string>
+    <string name="gps_status_ready">GPS Siap</string>
+    <string name="gps_status_searching">Mencari GPS...</string>
+    <string name="gps_status_weak">Sinyal Lemah</string>
+    <string name="gps_status_disabled">GPS Mati</string>
+    <string name="gps_status_permission_denied">Izin Ditolak</string>
+    <string name="gps_status_off">GPS Off</string>
+    <string name="estimate_label">Perkiraan</string>
+    <string name="metric_current_pace">Pace Saat Ini</string>
+    <string name="metric_avg_pace">Pace Rata-rata</string>
+    <string name="metric_cadence">Cadence</string>
+    <string name="section_splits">Split per 1 km</string>
+    <string name="split_km_header">KM</string>
+    <string name="split_duration_header">Waktu</string>
+    <string name="split_pace_header">Pace</string>
+    <string name="btn_calibrate_treadmill">Kalibrasi Jarak Treadmill</string>
+    <string name="dialog_calibrate_title">Kalibrasi Jarak Treadmill</string>
+    <string name="dialog_calibrate_msg">Masukkan jarak aktual yang tertera pada layar mesin treadmill untuk menyetel panjang langkah.</string>
+    <string name="dialog_calibrate_hint">Jarak aktual (km, mis. 2.50)</string>
+    <string name="dialog_calibrate_save">Simpan Kalibrasi</string>
+    <string name="permission_location_needed">Izin lokasi presisi dibutuhkan untuk pelacakan lari Outdoor.</string>
+    <string name="permission_notification_needed">Izin notifikasi dibutuhkan untuk menampilkan kontrol lari di latar belakang.</string>
+    <string name="btn_request_permission">Berikan Izin</string>
+
+    <!-- Target Harian (GoalsScreen) -->
+    <string name="goals_title">Target Harian</string>
+    <string name="goals_subtitle">Pantau dan kelola target aktivitas harianmu</string>
+    <string name="goals_empty_title">Belum Ada Target</string>
+    <string name="goals_empty_desc">Buat target harian pertamamu untuk melacak konsistensi latihan.</string>
+    <string name="btn_add_goal">Tambah Target</string>
+    <string name="dialog_add_goal_title">Tambah Target Baru</string>
+    <string name="dialog_edit_goal_title">Ubah Angka Target</string>
+    <string name="dialog_delete_goal_title">Hapus Target?</string>
+    <string name="dialog_delete_goal_desc">Target ini akan dihapus dari daftar target harian.</string>
+    <string name="label_select_exercise">Jenis Latihan</string>
+    <string name="label_target_value">Angka Target</string>
+    <string name="goal_status_active">Aktif</string>
+    <string name="goal_status_inactive">Nonaktif</string>
+    <string name="goal_progress_percent">%1$d%%</string>
+    <string name="btn_save">Simpan</string>
+    <string name="btn_delete">Hapus</string>
+    <string name="btn_edit">Ubah</string>
+
+    <!-- Aktivitas (ActivityScreen, HistoryScreen, StatsScreen) -->
+    <string name="activity_title">Aktivitas</string>
+    <string name="tab_history">Riwayat</string>
+    <string name="tab_stats">Statistik</string>
+    <string name="history_filter_all">Semua</string>
+    <string name="history_empty_title">Belum Ada Riwayat Latihan</string>
+    <string name="history_empty_desc">Selesaikan sesi latihan pertamamu untuk melihat riwayat aktivitas di sini.</string>
+    <string name="history_item_record_badge">Rekor Baru</string>
+    <string name="history_detail_title">Detail Sesi</string>
+    <string name="history_note_label">Catatan Sesi</string>
+    <string name="history_note_hint">Tambahkan catatan latihan...</string>
+    <string name="btn_save_note">Simpan Catatan</string>
+    <string name="btn_delete_session">Hapus Sesi</string>
+    <string name="dialog_delete_session_title">Hapus Sesi Latihan?</string>
+    <string name="dialog_delete_session_desc">Sesi latihan ini akan dihapus secara permanen dari riwayat dan statistik.</string>
+
+    <!-- Statistik (StatsScreen) -->
+    <string name="stats_section_totals">Ringkasan Total</string>
+    <string name="stats_total_sessions">Total Sesi</string>
+    <string name="stats_total_reps">Total Repetisi</string>
+    <string name="stats_total_km">Total Jarak</string>
+    <string name="stats_streak_banner">%1$d Hari Berturut-turut!</string>
+    <string name="stats_section_chart">Aktivitas 7 Hari Terakhir</string>
+    <string name="stats_chart_empty">Belum ada aktivitas dalam 7 hari terakhir</string>
+    <string name="stats_section_records">Rekor Pribadi</string>
+    <string name="stats_record_squat">Squat Terbanyak</string>
+    <string name="stats_record_pushup">Push-up Terbanyak</string>
+    <string name="stats_record_pace">Pace Terbaik</string>
+    <string name="stats_record_longest_run">Lari Terjauh</string>
+    <string name="stats_section_badges">Galeri Lencana (%1$d/%2$d)</string>
+    <string name="badge_unlocked_label">Terbuka</string>
+    <string name="badge_locked_label">Terkunci</string>
+
+    <!-- Profil Pengguna (ProfileScreen) -->
+    <string name="profile_title">Profil Pengguna</string>
+    <string name="profile_header_unnamed">Belum diatur</string>
+    <string name="profile_age_format">%1$d tahun</string>
+    <string name="profile_complete_badge">Profil Lengkap</string>
+    <string name="profile_incomplete_badge">Belum Lengkap</string>
+    <string name="profile_incomplete_hint">Lengkapi profil untuk akurasi kalori &amp; kalkulasi treadmill yang lebih presisi. Aplikasi tetap dapat digunakan meski belum lengkap.</string>
+    <string name="profile_notif_banner_title">Izin Notifikasi Ulang Tahun</string>
+    <string name="profile_notif_banner_desc">Aktifkan notifikasi agar ShakeFit dapat menyapa dan merayakan hari ulang tahunmu.</string>
+    <string name="btn_allow_notification">Izinkan Notifikasi</string>
+    <string name="label_nickname">Nama Panggilan</string>
+    <string name="hint_nickname">Nama panggilan (opsional, maks 30 karakter)</string>
+    <string name="label_gender">Jenis Kelamin</string>
+    <string name="gender_male">Laki-laki</string>
+    <string name="gender_female">Perempuan</string>
+    <string name="label_height">Tinggi Badan</string>
+    <string name="label_weight">Berat Badan</string>
+    <string name="label_birth_date">Tanggal Lahir</string>
+    <string name="hint_birth_date">YYYY-MM-DD</string>
+    <string name="btn_save_profile">Simpan Profil</string>
+    <string name="snackbar_profile_saved">Profil berhasil disimpan</string>
+    <string name="btn_open_settings">Pengaturan</string>
+
+    <!-- Pengaturan (SettingsScreen) -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_section_sensitivity">Sensitivitas Sensor</string>
+    <string name="settings_squat_sensitivity">Sensitivitas Squat</string>
+    <string name="settings_pushup_sensitivity">Sensitivitas Push-up</string>
+    <string name="settings_sensitivity_desc">Atur kepekaan deteksi gerakan sensor ponsel.</string>
+    <string name="settings_section_feedback">Umpan Balik &amp; Timer</string>
+    <string name="settings_vibration">Getaran</string>
+    <string name="settings_sound">Bunyi Bip</string>
+    <string name="settings_countdown">Hitung Mundur Mulai</string>
+    <string name="countdown_sec_format">%1$d dtk</string>
+    <string name="settings_section_calibration">Kalibrasi &amp; Pengembang</string>
+    <string name="settings_treadmill_factor">Faktor Panjang Langkah Treadmill</string>
+    <string name="settings_treadmill_factor_desc">Dihitung otomatis saat kamu melakukan kalibrasi jarak treadmill.</string>
+    <string name="settings_debug_sensors">Uji Sensor &amp; GPS (Debug)</string>
+</resources>
